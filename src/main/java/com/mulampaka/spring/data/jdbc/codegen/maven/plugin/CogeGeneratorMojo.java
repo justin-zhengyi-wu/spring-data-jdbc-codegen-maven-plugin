@@ -37,29 +37,29 @@ import com.mulampaka.spring.data.jdbc.codegen.CodeGenerator;
  */
 public class CogeGeneratorMojo extends AbstractMojo
 {
-	private final Logger logger = LoggerFactory.getLogger (CogeGeneratorMojo.class);
+    private final Logger logger = LoggerFactory.getLogger (CogeGeneratorMojo.class);
 
-	/**
-	 * Generator properties file path
-	 * 
-	 * @parameter default-value="src/main/resources/codegenerator.properties"
-	 * @required
-	 * @readonly
-	 */
-	private String propertiesFile;
-	
-	public CogeGeneratorMojo ()
-	{
+    /**
+     * Generator properties file path
+     *
+     * @parameter default-value="src/main/resources/codegenerator.properties"
+     * @required
+     * @readonly
+     */
+    private String propertiesFile;
 
-	}
-	
-	public void execute () throws MojoExecutionException, MojoFailureException
-	{
-		logger.info ("*********** Starting Spring Data Jdbc code generation ... ***********");
-		CodeGenerator generator = new CodeGenerator ();
-		generator.setPropertiesFile (propertiesFile);
-		generator.generate ();
-		logger.info ("*********** Spring Data Jdbc code generation DONE. ***********");
-	}
-	
+    public CogeGeneratorMojo ()
+    {
+
+    }
+
+    public void execute () throws MojoExecutionException, MojoFailureException
+    {
+        logger.info ("*********** Starting Spring Data Jdbc code generation ... ***********");
+        CodeGenerator generator = new CodeGenerator ();
+        generator.setPropertiesFile (propertiesFile);
+        generator.generate ();
+        logger.info ("*********** Spring Data Jdbc code generation DONE. ***********");
+    }
+
 }

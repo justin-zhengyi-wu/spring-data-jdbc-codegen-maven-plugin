@@ -20,22 +20,22 @@ Usage
   To use the plugin add the following snippet in the build->plugins section of your pom.xml
 ``` xml  
       <plugin>
-      			<!-- Spring Data Jdbc code generation. Code is generated before the compile phase -->
-    				<groupId>com.mulampaka.spring.data.jdbc.codegen</groupId>
-    				<version>1.0.0</version>
-    				<artifactId>spring-data-jdbc-codegen-maven-plugin</artifactId>
-    				<executions>
-    					<execution>
-    						<id>compile</id>						
-    						<goals>
-    							<goal>generatecode</goal>
-    						</goals>
-    						<configuration>
-    							<propertiesFile>src/main/resources/codegenerator.properties</propertiesFile>
-    						</configuration>
-    					</execution>
-    				</executions>
-    	</plugin>
+                  <!-- Spring Data Jdbc code generation. Code is generated before the compile phase -->
+                    <groupId>com.mulampaka.spring.data.jdbc.codegen</groupId>
+                    <version>1.0.0</version>
+                    <artifactId>spring-data-jdbc-codegen-maven-plugin</artifactId>
+                    <executions>
+                        <execution>
+                            <id>compile</id>                        
+                            <goals>
+                                <goal>generatecode</goal>
+                            </goals>
+                            <configuration>
+                                <propertiesFile>src/main/resources/codegenerator.properties</propertiesFile>
+                            </configuration>
+                        </execution>
+                    </executions>
+        </plugin>
 ```
 
 
